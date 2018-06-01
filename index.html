@@ -1,13 +1,17 @@
 <html>
+
 <head>
-		<title>TODO List</title>
-	</head>
-	<body >
+        <title>TODO List</title>
+</head>
+
+<body>
         <h1>To Do List</h1>
-        <input  id="newTask" type="text">
-        <button onclick=addItem()>Add</button>
-        <div id = "result"></div>
+        <form action="javascript:0" onsubmit="addItem()">
+                <input id="newTask" type="text" autofocus>
+                <input type="submit" value="Add"></input>
+        </form>
+        <div id="result"></div>
         <script src="app.js"></script>
-	</body>
+</body>
 
 </html>
