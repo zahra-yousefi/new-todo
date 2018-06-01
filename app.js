@@ -12,10 +12,11 @@ function addItem() {
     result.appendChild(listTag);
     input.value = '';
     index++;
+
+
     var remove = document.createElement('button')
     remove.textContent = 'delete';
-    
     listTag.appendChild(remove);
-    remove.onclick = listTag.removeChild(listTag);
+    remove.onclick = listTag.remove(listTag);
  
 }
