@@ -14,9 +14,27 @@ function addItem() {
     index++;
 
 
-    var remove = document.createElement('button')
+    var remove = document.createElement('button');
     remove.textContent = 'delete';
     listTag.appendChild(remove);
-    remove.onclick = listTag.remove(listTag);
- 
+    remove.onclick = function () {
+        result.removeChild(listTag);
+    }
+
+
+    var done = document.createElement('button');
+    done.textContent = 'do';
+    listTag.appendChild(done);
+    done.onclick = function () {
+        if (listTag.style.textDecoration) {
+            listTag.style.textDecoration = '';
+            done.textContent = 'do';
+        } else {
+            listTag.style.textDecoration = 'line-through';
+            done.textContent = 'undo';
+        }
+
+    }
+
 }
+
