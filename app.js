@@ -1,9 +1,21 @@
 var input = document.getElementById('newTask');
-var result = document.getElementById('result');
+var container = document.getElementById('container');
+var todoList = [];
 
-var index = 1;
+function render(todos) {
+    for (var i = 0; i < todos.length; i++) {
+        var li = document.createElement('li');
+        li.textContent = todos[i];
+        container.appendChild(li);
+    }
+}
+
+render(['asdasd','sdasda','asdgsdfg','1232342']);
+
+
 function addItem() {
     var inputText = input.value;
+    todoList.push(inputText);
     var listTag = document.createElement('div');
     var textNode = document.createTextNode(index + '. ' + inputText);
     var TextSpan = document.createElement('span');
