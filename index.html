@@ -6,13 +6,14 @@
 
 <body>
         <h1>To Do List</h1>
-        <form action="javascript:0" onsubmit="addItem()">
+        <form action="javascript:0" onsubmit="addItem()" autocomplete="off">
                 <input id="newTask" type="text" autofocus>
                 <input type="submit" value="Add"></input>
                 
         </form>
-        <ul id="container"></ul>
+        <ol id="container"></ol>
         <script src="app.js"></script>
+        <script src="view.js"></script>
 </body>
 
 </html>
