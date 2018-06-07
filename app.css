@@ -1,0 +1,119 @@
+@media (max-width: 500px) {
+    /* Your CSS rules here */
+    }
+
+
+
+:focus {
+    outline: none;
+}
+
+.container {
+    background: rgb(172, 143, 140);
+    max-width: 800px;
+    margin: 120px auto;
+    box-shadow: 5px 10px 30px -10px rgba(0, 0, 0, 0.75);
+}
+
+input {
+    font-size: 15px;
+    padding: 15px;
+}
+
+.todo-input {
+    background: #f7f7f7;
+    color: #8E0E00;
+    width: calc(100% - 100px);
+    padding-left: 25px;
+    border: 4px solid rgb(172, 143, 140);
+    border-radius: 20px/50px;
+}
+
+.todo-input:focus {
+    background: #fff;
+}
+
+.addBtn {
+    border: 4px solid rgb(172, 143, 140);
+    width: 96px;
+    background: rgb(241, 229, 227);
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 20px/50px;
+    float: right;
+}
+
+.h1-title {
+    background: rgb(172, 143, 140);
+    color: #fff;
+    margin: 0;
+    padding: 15px;
+    font-size: 25px;
+    text-shadow: 2px 2px 4px #1F1C18;
+}
+
+.span-input {
+    color: #1F1C18;
+    height: 45px;
+    line-height: 45px;
+    font-size: 20px;
+    padding: 0px;
+}
+
+.ul-tasks {
+    background: #fff;
+    margin: 0px;
+    color: #1F1C18;
+    list-style-type: none;
+    padding: 0px;
+    overflow-y: auto;
+    max-height: 500px;
+}
+
+.form {
+    margin: 0px;
+}
+
+.li-task {
+    border: 1px solid rgb(224, 198, 195);
+    cursor: pointer;
+}
+
+li:nth-child(2n) {
+    background: rgb(250, 247, 247);
+}
+
+.undo-btn {
+    background-image: url('img/DoCheck.png');
+    float: left;
+    padding: 12px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 10px;
+}
+
+.do-btn {
+    background-image: url('img/UndoCircle.png');
+    float: left;
+    padding: 12px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 10px;
+}
+
+.delete-btn {
+    background-image: url('img/delete-spam.png');
+    float: right;
+    padding: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 10px;
+}
+
+.todo-undo-colore {
+    color: rgb(204, 201, 201);
+    height: 45px;
+    line-height: 45px;
+    font-size: 20px;
+    padding: 0px;
+}
