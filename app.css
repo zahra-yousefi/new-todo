@@ -1,9 +1,3 @@
-@media (max-width: 500px) {
-    /* Your CSS rules here */
-    }
-
-
-
 :focus {
     outline: none;
 }
@@ -84,7 +78,7 @@ li:nth-child(2n) {
 }
 
 .undo-btn {
-    background-image: url('img/DoCheck.png');
+    background-image: url('img/do.png');
     float: left;
     padding: 12px;
     background-size: contain;
@@ -93,7 +87,7 @@ li:nth-child(2n) {
 }
 
 .do-btn {
-    background-image: url('img/UndoCircle.png');
+    background-image: url('img/undo.png');
     float: left;
     padding: 12px;
     background-size: contain;
@@ -102,7 +96,7 @@ li:nth-child(2n) {
 }
 
 .delete-btn {
-    background-image: url('img/delete-spam.png');
+    background-image: url('img/delete.png');
     float: right;
     padding: 10px;
     background-size: contain;
