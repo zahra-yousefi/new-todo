@@ -7,20 +7,31 @@
 
 <body>
         <div class="container">
-                <h1 class = 'h1-title'>To Do List</h1>
-                <form action="javascript:0" onsubmit="addItem()" class = 'form'>
+                <span class="deleted-list" id='ShowDeleted' onclick="showDeletedTodos()"></span>
+                <h1 id = "head-title" class='head-title'></h1>
+                <form id='form' action="javascript:0" onsubmit="addItem()" class='form'>
                         <input class='todo-input' id="newTask" type="text" autofocus autocomplete="off" placeholder="Add new todo">
                         <input class='addBtn' type="submit" value="Add"></input>
-
                 </form>
-                <ul id="todoListcontainer" class ='ul-tasks'></ul>
+                <h3 id="noItemMassage" class = "no-item-paraghraph" >There is no Item</h3>
+                <ul id="todoListcontainer" class='ul-tasks'></ul>
+                <div id="footer" class = "footer">
+                        <span class="do-all-icon" id="doAllTodo" onclick="doAllTodos()"></span>
+                        <span class="delete-all-icon" id="deleteAllTodo" onclick="deleteAllTodos()"></span>
+                        <span class="undelete-all-icon" id="unDeleteAllTodo" onclick="unDeleteAllTodos()"></span>
+                </div>
+                <!-- <ul id="deleteListcontainer" class='ul-tasks' style="display: none"></ul> -->
         </div>
-        <div>
-                
-        </div>
-
         <script src="app.js"></script>
         <script src="view.js"></script>
+
+        <script>
+                init();
+
+                function init() {
+                        render();
+                }
+        </script>
 </body>
 
 </html>

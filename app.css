@@ -20,7 +20,6 @@ input {
     width: calc(100% - 100px);
     padding-left: 25px;
     border: 4px solid rgb(172, 143, 140);
-    border-radius: 20px/50px;
 }
 
 .todo-input:focus {
@@ -32,18 +31,32 @@ input {
     width: 96px;
     background: rgb(241, 229, 227);
     font-style: italic;
+    font-family: sans-serif;
     cursor: pointer;
-    border-radius: 20px/50px;
     float: right;
+    margin: 0px 2px;
 }
 
-.h1-title {
+.head-title {
     background: rgb(172, 143, 140);
     color: #fff;
     margin: 0;
-    padding: 15px;
-    font-size: 25px;
+    padding: 20px;
+    font-size: 20px;
+    font-family: sans-serif;
     text-shadow: 2px 2px 4px #1F1C18;
+}
+
+.no-item-paraghraph {
+    background-color: #f7f7f7;
+    margin: 3px;
+    padding: 10px;
+    font-family: sans-serif;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 15px;
+    color: gray;
+    border: 1px solid rgb(224, 198, 195);
 }
 
 .span-input {
@@ -54,6 +67,14 @@ input {
     padding: 0px;
 }
 
+.span-input-deleted-list {
+    color: #1F1C18;
+    height: 45px;
+    line-height: 45px;
+    font-size: 20px;
+    padding: 10px;
+}
+
 .ul-tasks {
     background: #fff;
     margin: 0px;
@@ -61,7 +82,7 @@ input {
     list-style-type: none;
     padding: 0px;
     overflow-y: auto;
-    max-height: 500px;
+    max-height: 300px;
 }
 
 .form {
@@ -104,10 +125,86 @@ li:nth-child(2n) {
     margin: 10px;
 }
 
+.undelete-btn{
+    background-image: url('img/undeleted.png');
+    float: right;
+    padding: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 10px;
+}
+
 .todo-undo-colore {
     color: rgb(204, 201, 201);
     height: 45px;
     line-height: 45px;
     font-size: 20px;
     padding: 0px;
+}
+
+.all-todo-btn{
+    margin: 0px 2px;
+    border: 4px solid rgb(172, 143, 140);
+    background: rgb(241, 229, 227);
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 20px/50px;
+    text-align: center;
+    width: 92px;
+}
+
+.do-all-icon {
+    background-image: url('img/do-all.png');
+    float: left;
+    padding: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: -15px -9px;
+    cursor: pointer;
+    background-color:  rgb(172, 143, 140);
+}
+
+.delete-all-icon {
+    background-image: url('img/delete-all.png');
+    float: left;
+    padding: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: -15px 30px;
+    cursor: pointer;
+}
+
+.undelete-all-icon {
+    background-image: url('img/undelete-all.png');
+    float: left;
+    padding: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: -15px -9px;
+    cursor: pointer;
+}
+
+
+.todo-list-icon {
+    background-image: url('img/todo-list.png');
+    float: right;
+    padding: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.deleted-list-icon {
+    background-image: url('img/deleted-list.png');
+    float: right;
+    padding: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.footer{
+    padding: 20px;
 }
