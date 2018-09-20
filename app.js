@@ -1,18 +1,22 @@
-var todoList = [];
+var todoList = getlocalStorage();
+render();
 
 function addTodo(text) {
     todoList.push({ text: text, isDeleted: false });
+    setLocalStorage(todoList);
     render();
 }
 
 function removeTodo(todo) {
     todo.isDeleted = !todo.isDeleted;
+    setLocalStorage(todoList);
     render();
 }
 
 function doUndoTodo(todo) {
     if (todo.isDeleted) return;
     todo.isDone = !todo.isDone;
+    setLocalStorage(todoList);
     render();
 }
 
@@ -22,6 +26,7 @@ function doAllTodos() {
             todoList[i].isDone = true;
         }
     }
+    setLocalStorage(todoList);
     render();
 }
 
@@ -31,6 +36,7 @@ function deleteAllTodos() {
             todoList[i].isDeleted = true;
         }
     }
+    setLocalStorage(todoList);
     render();
 }
 
@@ -38,6 +44,7 @@ function unDeleteAllTodos() {
     for (var i = 0; i < todoList.length; i++) {
         todoList[i].isDeleted = false;
     }
+    setLocalStorage(todoList);
     render();
 }
 
